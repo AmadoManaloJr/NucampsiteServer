@@ -1,5 +1,5 @@
 const express = require('express');
-const partner = require('../models/partner');
+const Partner = require('../models/partner');
 const partnerRouter = express.Router();
 
 partnerRouter.route('/')
