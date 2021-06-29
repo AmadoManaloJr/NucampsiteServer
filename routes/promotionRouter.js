@@ -1,5 +1,5 @@
 const express = require('express');
-const promotion = require('../models/promotiongit');
+const promotion = require('../models/promotion');
 const promotionRouter = express.Router();
 
 promotionRouter.route('/')
