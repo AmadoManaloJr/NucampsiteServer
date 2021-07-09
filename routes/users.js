@@ -2,7 +2,7 @@ const express = require('express');
 const User = require('../models/user');
 const passport = require('passport');
 const authenticate = require('../authenticate');
-const cors = require('cors');
+const cors = require('./cors');
 
 const router = express.Router();
 
