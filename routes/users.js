@@ -7,7 +7,7 @@ const cors = require('cors');
 const router = express.Router();
 
 /* GET users listing. */
-router.get('/', cors.corsWithOptions, function(req, res, next) {
+router.get('/', cors.corsWithOptions, authenticate.verifyUser, authenticate.verifyAdmin, (req, res, next) {
     if (req.user.admin) {
         return User.find();
     } else {
